@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QE9R90G2DR"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-QE9R90G2DR');
+    gtag('config', 'G-QE9R90G2DR');
 </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,7 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header class="header">
@@ -33,6 +35,9 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -47,11 +52,11 @@
             <h1 class="hero-title">Hi, I'm Mohamed Elbauomy</h1>
             <h2 class="hero-subtitle">Software Tester & Quality Assurance Specialist</h2>
             <p class="hero-description">
-                Passionate about ensuring software quality through comprehensive testing strategies. 
+                Passionate about ensuring software quality through comprehensive testing strategies.
                 I specialize in both manual and automated testing to deliver exceptional user experiences.
             </p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
@@ -75,14 +80,19 @@
                 <div class="about-text">
                     <h3>Software Testing Professional</h3>
                     <p>
-                        With over 5 years of experience in software testing, I've developed expertise in 
-                        both manual and automated testing methodologies. I'm passionate about finding bugs 
-                        before they reach users and ensuring that every product meets the highest quality standards.
+                        I’m Mohamed Albayoumi, a Software Tester with a strong focus on manual testing for web and
+                        mobile applications. I help teams deliver high-quality software by identifying issues early and
+                        ensuring products meet both user and business expectations.
                     </p>
                     <p>
-                        My background includes working with various testing tools and frameworks, including 
-                        Selenium, Appium, and Postman. I specialize in functional testing, regression testing, 
-                        and performance testing across web and mobile applications.
+                        I have hands-on experience creating test cases, writing test scenarios, and reporting bugs
+                        clearly and effectively. I’m familiar with SDLC, STLC, and Agile workflows, collaborating
+                        closely with developers, product owners, and stakeholders to ensure smooth sprints and on-time
+                        deliveries.
+                    </p>
+                    <p>
+                        Currently, I’m expanding my skills in automation, performance, and API testing, aiming to become
+                        a well-rounded QA engineer who can contribute to every stage of software development.
                     </p>
                     <div class="skills">
                         <h4>Key Skills:</h4>
@@ -106,61 +116,146 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Mobile App Testing</h3>
-                        <p>
-                            Comprehensive testing of a mobile e-commerce application including user authentication, 
-                            payment processing, and inventory management features. Implemented automated test suites 
-                            that reduced testing time by 60%.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Mobile Testing</span>
-                            <span class="project-tag">Automation</span>
-                            <span class="project-tag">Appium</span>
+            <div class="projects-slider-container">
+                <div class="projects-track">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Mobile App Testing</h3>
+                            <p>
+                                Comprehensive testing of a mobile e-commerce application including user authentication,
+                                payment processing, and inventory management features. Implemented automated test suites
+                                that reduced testing time by 60%.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Mobile Testing</span>
+                                <span class="project-tag">Automation</span>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Web Application Performance Testing</h3>
-                        <p>
-                            Conducted load testing and performance optimization for a high-traffic web application. 
-                            Identified bottlenecks and provided recommendations that improved page load times by 40%.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Performance Testing</span>
-                            <span class="project-tag">JMeter</span>
-                            <span class="project-tag">Load Testing</span>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Web Application Performance Testing</h3>
+                            <p>
+                                Conducted load testing and performance optimization for a high-traffic web application.
+                                Identified bottlenecks and provided recommendations that improved page load times by
+                                40%.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Performance Testing</span>
+                                <span class="project-tag">JMeter</span>
+                                <span class="project-tag">Load Testing</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fab fa-postman"></i>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fab fa-postman"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>API Testing Framework Development</h3>
+                            <p>
+                                Built a comprehensive API testing framework using Postman and Newman for continuous
+                                integration. Created reusable test collections that improved API testing efficiency by
+                                70%.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">API Testing</span>
+                                <span class="project-tag">Postman</span>
+                                <span class="project-tag">CI/CD</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <h3>API Testing Framework Development</h3>
-                        <p>
-                            Built a comprehensive API testing framework using Postman and Newman for continuous 
-                            integration. Created reusable test collections that improved API testing efficiency by 70%.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">API Testing</span>
-                            <span class="project-tag">Postman</span>
-                            <span class="project-tag">CI/CD</span>
+
+                    <!-- Project: Moaawn -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Moaawn</h3>
+                            <p>
+                                Testing of the dashboard and mobile app using manual testing, bug reporting, and API
+                                checking.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Manual Testing</span>
+                                <span class="project-tag">Mobile Testing</span>
+                                <span class="project-tag">Dashboard Testing</span>
+                                <span class="project-tag">API Testing</span>
+                                <span class="project-tag">Bug Reporting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Qaumha -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Qaumha</h3>
+                            <p>
+                                Mobile application testing involving manual tests, bug reporting, and API verification.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Manual Testing</span>
+                                <span class="project-tag">Mobile Testing</span>
+                                <span class="project-tag">API Testing</span>
+                                <span class="project-tag">Bug Reporting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Octobay -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Octobay</h3>
+                            <p>
+                                Manual testing of the mobile app, including bug reporting and API checks.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Manual Testing</span>
+                                <span class="project-tag">Mobile Testing</span>
+                                <span class="project-tag">API Testing</span>
+                                <span class="project-tag">Bug Reporting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Tech -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tech</h3>
+                            <p>
+                                Comprehensive testing of dashboard and mobile app. Involved manual testing, bug
+                                reporting,
+                                and API validation.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Manual Testing</span>
+                                <span class="project-tag">Mobile Testing</span>
+                                <span class="project-tag">Dashboard Testing</span>
+                                <span class="project-tag">API Testing</span>
+                                <span class="project-tag">Bug Reporting</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,7 +271,7 @@
                 <div class="contact-info">
                     <h3>Let's Connect</h3>
                     <p>
-                        I'm always interested in new opportunities and collaborations. 
+                        I'm always interested in new opportunities and collaborations.
                         Feel free to reach out if you'd like to discuss testing projects or opportunities.
                     </p>
                     <div class="contact-methods">
@@ -190,7 +285,8 @@
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/mohamed-elbauomy-958aa1221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/mohamed-elbauomy-958aa1221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank">LinkedIn</a>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-github"></i>
@@ -267,11 +363,11 @@
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                
+
                 if (targetSection) {
                     const headerHeight = document.querySelector('.header').offsetHeight;
                     const targetPosition = targetSection.offsetTop - headerHeight;
-                    
+
                     window.scrollTo({
                         top: targetPosition,
                         behavior: 'smooth'
@@ -284,11 +380,9 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.header');
             if (window.scrollY > 50) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                header.classList.add('scrolled');
             } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = 'none';
+                header.classList.remove('scrolled');
             }
         });
 
@@ -297,31 +391,73 @@
         if (contactForm) {
             contactForm.addEventListener('submit', (e) => {
                 e.preventDefault();
-                
+
                 // Get form data
                 const formData = new FormData(contactForm);
                 const name = contactForm.querySelector('input[type="text"]').value;
                 const email = contactForm.querySelector('input[type="email"]').value;
                 const message = contactForm.querySelector('textarea').value;
-                
+
                 // Basic validation
                 if (!name || !email || !message) {
                     alert('Please fill in all fields');
                     return;
                 }
-                
+
                 // Email validation
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(email)) {
                     alert('Please enter a valid email address');
                     return;
                 }
-                
+
                 // Simulate form submission (replace with actual form handling)
                 alert('Thank you for your message! I will get back to you soon.');
                 contactForm.reset();
             });
         }
+
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+
+        // Check for saved user preference, if any, on load of the website
+        const savedTheme = localStorage.getItem('theme');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+        // Set initial theme
+        if (savedTheme === 'dark' || (!savedTheme && systemTheme === 'dark')) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        // Toggle theme on click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        });
+
+
+        // Project Slider Logic
+        const projectsTrack = document.querySelector('.projects-track');
+        if (projectsTrack) {
+            // Clone the projects to create an infinite loop effect
+            const projects = Array.from(projectsTrack.children);
+            projects.forEach(project => {
+                const clone = project.cloneNode(true);
+                projectsTrack.appendChild(clone);
+            });
+        }
     </script>
 </body>
+
 </html>
