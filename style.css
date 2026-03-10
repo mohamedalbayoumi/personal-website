@@ -465,6 +465,124 @@ h6 {
     font-weight: 500;
 }
 
+/* Certificates Section */
+.certificates {
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+
+.certificates-slider-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.certificates-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: scrollCerts 35s linear infinite;
+    padding: 1rem 0;
+}
+
+.certificates-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollCerts {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 1rem));
+    }
+}
+
+/* Certificate cards use real thumbnails instead of icons */
+.certificates .project-card {
+    cursor: pointer;
+}
+
+.certificate-image {
+    height: 220px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Certificate Lightbox */
+.certificate-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    backdrop-filter: blur(4px);
+}
+
+.certificate-lightbox.active {
+    display: flex;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    line-height: 1;
+    z-index: 10001;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.2);
+    color: #ff6b6b;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+}
+
+/* Ensure certificates text stays dark since background is fixed light */
+.certificates .section-title {
+    color: #333333;
+}
+
+.certificates .section-title::after {
+    background: #000000;
+}
+
+.certificates .certificate-content h3 {
+    color: #333333;
+}
+
+.certificates .certificate-issuer {
+    color: #4a5568;
+}
+
 /* Contact Section */
 .contact {
     padding: 5rem 0;
@@ -766,6 +884,12 @@ h6 {
         gap: 2rem;
     }
 
+    .certificates {
+        padding: 3rem 0;
+    }
+
+
+
     .contact-info h3,
     .contact-form h3 {
         font-size: 1.5rem;
@@ -913,6 +1037,28 @@ h6 {
         padding: 2rem 0;
     }
 
+    .certificates {
+        padding: 2rem 0;
+    }
+
+    .certificate-icon {
+        height: 140px;
+        font-size: 3.5rem;
+    }
+
+    .certificate-content {
+        padding: 1.25rem;
+    }
+
+    .certificate-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .btn-certificate {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+
     .contact-info h3,
     .contact-form h3 {
         font-size: 1.25rem;
@@ -992,6 +1138,7 @@ h6 {
     .project-card:hover {
         transform: none;
     }
+
 
     .nav-link:hover::after {
         width: 0;
