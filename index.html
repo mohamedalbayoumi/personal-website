@@ -268,109 +268,32 @@
     <section id="certificates" class="certificates">
         <div class="container">
             <h2 class="section-title">Certificates</h2>
-            <div class="certificates-slider-container">
-                <div class="certificates-track">
-                    <!-- Certificate 1 -->
-                    <div class="project-card certificate-card"
-                        onclick="openCertificate('images/certificate-agile-project-management.png', 'Agile Project Management Certificate')">
-                        <div class="certificate-image">
-                            <img src="images/certificate-agile-project-management.png"
-                                alt="Agile Project Management Certificate" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Agile Project Management</h3>
-                            <p>Certificate of Participation from Yanfa3 (ينفع) for successfully completing the Agile
-                                Project Management class.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Agile</span>
-                                <span class="project-tag">Project Management</span>
-                                <span class="project-tag">Yanfa3</span>
-                            </div>
-                        </div>
+            <div class="certificates-grid">
+                <div class="certificate-card"
+                    onclick="openCertificate('images/certificate-agile-project-management.png', 'Agile Project Management Certificate')">
+                    <img src="images/certificate-agile-project-management.png"
+                        alt="Agile Project Management Certificate" class="certificate-thumb">
+                    <div class="certificate-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Click to view</span>
                     </div>
-
-                    <!-- Certificate 2 -->
-                    <div class="project-card certificate-card"
-                        onclick="openCertificate('images/certificate-agile-crash-course.png', 'Agile Crash Course for Beginners Certificate')">
-                        <div class="certificate-image">
-                            <img src="images/certificate-agile-crash-course.png"
-                                alt="Agile Crash Course for Beginners Certificate" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Agile Crash Course for Beginners</h3>
-                            <p>Certificate of Completion from Udemy for the Agile Crash Course for Beginners by Nezam
-                                Academy.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Agile</span>
-                                <span class="project-tag">Scrum</span>
-                                <span class="project-tag">Udemy</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate 3 -->
-                    <div class="project-card certificate-card"
-                        onclick="openCertificate('images/certificate-api-crash-course.png', 'API Crash Course Certificate')">
-                        <div class="certificate-image">
-                            <img src="images/certificate-api-crash-course.png" alt="API Crash Course Certificate"
-                                loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>API Crash Course</h3>
-                            <p>Certificate of Completion from Udemy for API Crash Course: How to Create, Test, &
-                                Document your APIs.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">API Testing</span>
-                                <span class="project-tag">Documentation</span>
-                                <span class="project-tag">Udemy</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate 4 -->
-                    <div class="project-card certificate-card"
-                        onclick="openCertificate('images/certificate-project-management.png', 'Project Management Certificate')">
-                        <div class="certificate-image">
-                            <img src="images/certificate-project-management.png" alt="Project Management Certificate"
-                                loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>إدارة المشروعات</h3>
-                            <p>Certificate of Participation from Yanfa3 (ينفع) for successfully completing the Project
-                                Management class.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Project Management</span>
-                                <span class="project-tag">Yanfa3</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate 5 -->
-                    <div class="project-card certificate-card"
-                        onclick="openCertificate('images/certificate-scrum-master.png', 'How To Be A Scrum Master Certificate')">
-                        <div class="certificate-image">
-                            <img src="images/certificate-scrum-master.png" alt="How To Be A Scrum Master Certificate"
-                                loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>How To Be A Scrum Master</h3>
-                            <p>Certificate of Participation from Yanfa3 (ينفع) for successfully completing the Scrum
-                                Master class.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Scrum</span>
-                                <span class="project-tag">Agile</span>
-                                <span class="project-tag">Yanfa3</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="certificate-card"
+                    onclick="openCertificate('images/certificate-claude-101.png', 'Claude 101 Certificate - Anthropic')">
+                    <img src="images/certificate-claude-101.png"
+                        alt="Claude 101 Certificate - Anthropic" class="certificate-thumb">
+                    <div class="certificate-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Click to view</span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Certificate Lightbox Modal -->
-            <div class="certificate-lightbox" id="certificateLightbox" onclick="closeLightbox()">
-                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-                <img src="" alt="Certificate" class="lightbox-img" id="lightboxImg" onclick="event.stopPropagation()">
-            </div>
+        <!-- Certificate Lightbox Modal -->
+        <div class="certificate-lightbox" id="certificateLightbox" onclick="closeLightbox()">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img src="" alt="Certificate" class="lightbox-img" id="lightboxImg" onclick="event.stopPropagation()">
         </div>
     </section>
 
@@ -535,12 +458,14 @@
 
         // Check for saved user preference, if any, on load of the website
         const savedTheme = localStorage.getItem('theme');
-        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-        // Set initial theme
-        if (savedTheme === 'dark' || (!savedTheme && systemTheme === 'dark')) {
+        // Set initial theme (default to light mode)
+        if (savedTheme === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
             themeIcon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
         }
 
         // Toggle theme on click
@@ -570,16 +495,6 @@
             });
         }
 
-        // Certificates Slider Logic
-        const certificatesTrack = document.querySelector('.certificates-track');
-        if (certificatesTrack) {
-            const certs = Array.from(certificatesTrack.children);
-            certs.forEach(cert => {
-                const clone = cert.cloneNode(true);
-                certificatesTrack.appendChild(clone);
-            });
-        }
-
         // Certificate Lightbox
         function openCertificate(src, alt) {
             event.stopPropagation();
@@ -595,14 +510,6 @@
             const lightbox = document.getElementById('certificateLightbox');
             lightbox.classList.remove('active');
             document.body.style.overflow = '';
-
-            // Force-restart the certificates slider animation
-            const track = document.querySelector('.certificates-track');
-            if (track) {
-                track.style.animation = 'none';
-                track.offsetHeight;
-                track.style.animation = '';
-            }
         }
 
         // Close lightbox with Escape key
