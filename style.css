@@ -475,12 +475,12 @@ h6 {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .certificate-card {
     position: relative;
-    width: 400px;
+    width: 270px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
