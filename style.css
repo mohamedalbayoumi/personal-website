@@ -489,6 +489,15 @@ h6 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Keep these new certificates side-by-side (AI then Agile) at the end of the grid */
+.certificate-ai-fluency {
+    order: 100;
+}
+
+.certificate-agile-crash {
+    order: 101;
+}
+
 .certificate-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
